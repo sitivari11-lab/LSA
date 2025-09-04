@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Chi siamo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Chi siamo</a></li>
+        <li><a href="contact.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Chi siamo</h1>
+    <p>Siamo un team creativo con la passione per il web design e lo sviluppo.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Luca</p>
+  </footer>
+</body>
+</html>
