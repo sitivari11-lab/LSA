@@ -1,42 +1,102 @@
+/* Stili base */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 header {
   background-color: #333;
   color: white;
-  padding: 10px;
+  padding: 20px;
+  text-align: center;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 20px 0 0 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 .logo {
-  width: 100px;
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .banner {
   width: 100%;
   height: auto;
+  display: block;
+  margin: 20px 0;
 }
 
 main {
   padding: 20px;
+  text-align: center;
 }
 
 footer {
   background-color: #eee;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+.footer-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.3s ease;
+}
+
+.footer-icons a:hover img {
+  opacity: 0.6;
+}
+
+/* 🔧 Responsive design per schermi piccoli */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    max-width: 80px;
+  }
+
+  .banner {
+    margin: 10px 0;
+  }
+
+  .footer-icons {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
